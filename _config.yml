@@ -91,7 +91,7 @@ theme_mode: # [light | dark]
 cdn: "" # 【可选修改】图片 CDN；暂时使用本地资源
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "" # 【需要修改】头像路径，例如 /assets/img/avatar.jpg
+avatar: "https://github.com/ypj0.png?size=256" # 【已设置】使用 GitHub 头像；修改用户名时同步修改 URL
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -112,14 +112,14 @@ actions:
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # 【可选修改】评论服务：giscus / utterances / disqus
+  provider: utterances # 【已设置】使用 GitHub 账号登录评论
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # 【可选修改】例如 ypj0/ypj_blog
-    issue_term: # < url | pathname | title | ...>
+    repo: ypj0/ypj_blog # 【需要修改】评论存储仓库
+    issue_term: pathname
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
